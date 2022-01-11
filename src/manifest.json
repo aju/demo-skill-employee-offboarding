@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "identifier": "@demo/employee-offboarding-demo",
+  "version": "0.0.1",
+  "name": "Employee Offboarding Demo",
+  "description": "Description of Employee Offboarding Demo.",
+  "icon": "icon.png",
+  "background_script": "background.js",
+  "content_script": "content.js",
+  "matcher_script": "matcher.js",
+  "matcher_api_version": 2
+}
