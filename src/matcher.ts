@@ -1,3 +1,7 @@
+import {SERVICE_DESK_URL} from 'shared/constants';
+
 export default function matcher(window: Window) {
-  return window.location.href.startsWith(`https://www.google.com`);
+  if (!window.location.href.startsWith(`${SERVICE_DESK_URL}/ticket`)) return;
+  if (document.getElementById('sys_display.incident.category')?.getAttribute('value') !== 'Employee offboarding') return;
+  return true;
 }
